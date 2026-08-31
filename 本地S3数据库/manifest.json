@@ -1,0 +1,303 @@
+[
+  {
+    "s3Key": "download/船舶_000012_20260624_广东分公司.xlsx",
+    "local": "download/船舶_000012_20260624_广东分公司.xlsx",
+    "bytes": 11098,
+    "note": "边界:上传文件错放在download目录,配对_result也在download",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260625_福建分公司(1).xlsx",
+    "local": "download/船舶_000012_20260625_福建分公司(1).xlsx",
+    "bytes": 11123,
+    "note": "边界:上传文件错放在download目录,配对_result也在download",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/船舶_000012_20260507_浙江分公司.xlsx",
+    "local": "upload/船舶_000012_20260507_浙江分公司.xlsx",
+    "bytes": 11702,
+    "note": "船舶上传常规样例",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/船舶_000012_20260509_重庆分公司.xlsx",
+    "local": "upload/船舶_000012_20260509_重庆分公司.xlsx",
+    "bytes": 11304,
+    "note": "船舶上传常规样例",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/船舶_000012_20260602_天津分公司.xlsx",
+    "local": "upload/船舶_000012_20260602_天津分公司.xlsx",
+    "bytes": 11104,
+    "note": "船舶上传常规样例",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/船舶_000012_20260512_上海分公司 (11).xlsx",
+    "local": "upload/船舶_000012_20260512_上海分公司 (11).xlsx",
+    "bytes": 11284,
+    "note": "边界:文件名含空格和括号序号",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/船舶_000012_20260525_1安徽分公司.xlsx",
+    "local": "upload/船舶_000012_20260525_1安徽分公司.xlsx",
+    "bytes": 11613,
+    "note": "边界:非规范命名(分公司前加序号)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/船舶_000012_202605281安徽分公司.xlsx",
+    "local": "upload/船舶_000012_202605281安徽分公司.xlsx",
+    "bytes": 11632,
+    "note": "边界:非规范命名(日期后直接拼序号)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260624_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260624_广东分公司_result.xlsx",
+    "bytes": 10805,
+    "note": "配对:upload同名文件",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260625_福建分公司(1)_result.xlsx",
+    "local": "download/船舶_000012_20260625_福建分公司(1)_result.xlsx",
+    "bytes": 11540,
+    "note": "配对:upload同名文件",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260623_河南分公司_result.xlsx",
+    "local": "download/船舶_000012_20260623_河南分公司_result.xlsx",
+    "bytes": 10975,
+    "note": "配对:上传文件在download目录",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260608_辽宁分公司_result.xlsx",
+    "local": "download/船舶_000012_20260608_辽宁分公司_result.xlsx",
+    "bytes": 10810,
+    "note": "最早一批船舶结果",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260610_上海分公司_result.xlsx",
+    "local": "download/船舶_000012_20260610_上海分公司_result.xlsx",
+    "bytes": 11102,
+    "note": "船舶结果常规样例",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260622_山东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260622_山东分公司_result.xlsx",
+    "bytes": 10987,
+    "note": "船舶结果常规样例",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260625_厦门分公司_result.xlsx",
+    "local": "download/船舶_000012_20260625_厦门分公司_result.xlsx",
+    "bytes": 10793,
+    "note": "船舶结果常规样例",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260624_福建分公司(1)_result.xlsx",
+    "local": "download/船舶_000012_20260624_福建分公司(1)_result.xlsx",
+    "bytes": 11540,
+    "note": "配对:upload/船舶_000012_20260625_福建分公司(1).xlsx(次日返回)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260609_辽宁分公司.xlsx_result.xlsx",
+    "local": "download/船舶_000012_20260609_辽宁分公司.xlsx_result.xlsx",
+    "bytes": 10780,
+    "note": "边界:双后缀.xlsx_result.xlsx",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260623_上海分公司 _result.xlsx",
+    "local": "download/船舶_000012_20260623_上海分公司 _result.xlsx",
+    "bytes": 11083,
+    "note": "边界:_result前有空格",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20240704江苏分公司.xlsx",
+    "local": "upload/A01_000012_20240704江苏分公司.xlsx",
+    "bytes": 11313,
+    "note": "配对;无连字符命名",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20240705-内蒙古分公司.xlsx",
+    "local": "upload/A01_000012_20240705-内蒙古分公司.xlsx",
+    "bytes": 11172,
+    "note": "配对;结果文件为大写RESULT",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20240705-四川分公司.xlsx",
+    "local": "upload/A01_000012_20240705-四川分公司.xlsx",
+    "bytes": 11101,
+    "note": "配对",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20240705-大连分公司.xlsx",
+    "local": "upload/A01_000012_20240705-大连分公司.xlsx",
+    "bytes": 11191,
+    "note": "配对;结果文件为大写RESULT",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20241217-广东分公司.xlsx",
+    "local": "upload/A01_000012_20241217-广东分公司.xlsx",
+    "bytes": 11107,
+    "note": "配对",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20241218-上海分公司.xlsx",
+    "local": "upload/A01_000012_20241218-上海分公司.xlsx",
+    "bytes": 11157,
+    "note": "配对",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20250513-广东分公司.xlsx",
+    "local": "upload/A01_000012_20250513-广东分公司.xlsx",
+    "bytes": 11405,
+    "note": "配对",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20250506-北京分公司.xlsx",
+    "local": "upload/A01_000012_20250506-北京分公司.xlsx",
+    "bytes": 11339,
+    "note": "企业上传常规样例",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "upload/A01_000012_20250514-广东分公司（南顺） .xlsx",
+    "local": "upload/A01_000012_20250514-广东分公司（南顺） .xlsx",
+    "bytes": 11710,
+    "note": "边界:全角括号+尾随空格",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20240704江苏分公司_result.xlsx",
+    "local": "download/A01_000012_20240704江苏分公司_result.xlsx",
+    "bytes": 9470,
+    "note": "配对:upload同名文件",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20240705-内蒙古分公司_RESULT.xlsx",
+    "local": "download/A01_000012_20240705-内蒙古分公司_RESULT.xlsx",
+    "bytes": 9560,
+    "note": "配对;边界:大写RESULT",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20240705-四川分公司_result.xlsx",
+    "local": "download/A01_000012_20240705-四川分公司_result.xlsx",
+    "bytes": 9480,
+    "note": "配对",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20240705-大连分公司_RESULT.xlsx",
+    "local": "download/A01_000012_20240705-大连分公司_RESULT.xlsx",
+    "bytes": 9522,
+    "note": "配对;边界:大写RESULT",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20241217-广东分公司_result.xlsx",
+    "local": "download/A01_000012_20241217-广东分公司_result.xlsx",
+    "bytes": 7277,
+    "note": "配对",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20241218-上海分公司_result.xlsx",
+    "local": "download/A01_000012_20241218-上海分公司_result.xlsx",
+    "bytes": 7368,
+    "note": "配对",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20250513-广东分公司_result.xlsx",
+    "local": "download/A01_000012_20250513-广东分公司_result.xlsx",
+    "bytes": 7809,
+    "note": "配对",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20241219-湖南分公司_result.xlsx",
+    "local": "download/A01_000012_20241219-湖南分公司_result.xlsx",
+    "bytes": 7239,
+    "note": "企业结果常规样例",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20250516-山东分公司_result.xlsx",
+    "local": "download/A01_000012_20250516-山东分公司_result.xlsx",
+    "bytes": 122942,
+    "note": "大文件(122KB,多船多险种)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/A01_000012_20240710-湖北分公司_result .xlsx",
+    "local": "download/A01_000012_20240710-湖北分公司_result .xlsx",
+    "bytes": 9456,
+    "note": "边界:.xlsx前有空格",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "A01_000012_20250306-安徽分公司.xls",
+    "local": "root/A01_000012_20250306-安徽分公司.xls",
+    "bytes": 31232,
+    "note": "边界:.xls扩展名(非.xlsx)",
+    "magic": "d0cf11e0"
+  },
+  {
+    "s3Key": "A01_000001_20240313湖南分公司.xlsx",
+    "local": "root/A01_000001_20240313湖南分公司.xlsx",
+    "bytes": 9824,
+    "note": "根目录;服务编号000001;无连字符",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "A01_000001_20250318甘肃分公司.xlsx",
+    "local": "root/A01_000001_20250318甘肃分公司.xlsx",
+    "bytes": 9641,
+    "note": "根目录;服务编号000001",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "新疆分公司0725 - 副本.xlsx",
+    "local": "root/新疆分公司0725 - 副本.xlsx",
+    "bytes": 11323,
+    "note": "边界:完全不符合命名规范的根目录文件",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "广东汕头2.24.xlsx",
+    "local": "root/广东汕头2.24.xlsx",
+    "bytes": 8788,
+    "note": "边界:完全不符合命名规范的根目录文件",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "9.30黑龙江运力通供应链管理有限公司/A01_000012_20240930-黑龙江分公司.xlsx",
+    "local": "root/9.30黑龙江运力通供应链管理有限公司/A01_000012_20240930-黑龙江分公司.xlsx",
+    "bytes": 11105,
+    "note": "边界:放在自建子文件夹里",
+    "magic": "504b0304"
+  }
+]
