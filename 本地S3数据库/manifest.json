@@ -299,5 +299,320 @@
     "bytes": 11105,
     "note": "边界:放在自建子文件夹里",
     "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260407_大连分公司_result.xlsx",
+    "local": "download/船舶_000012_20260407_大连分公司_result.xlsx",
+    "bytes": 10626,
+    "note": "4月最早批;大连",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260407_福建分公司_result.xlsx",
+    "local": "download/船舶_000012_20260407_福建分公司_result.xlsx",
+    "bytes": 10935,
+    "note": "4月最早批;福建",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260407_宁波分公司_result.xlsx",
+    "local": "download/船舶_000012_20260407_宁波分公司_result.xlsx",
+    "bytes": 10801,
+    "note": "4月最早批;宁波(本地新增分公司)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260407_总公司_result.xlsx",
+    "local": "download/船舶_000012_20260407_总公司_result.xlsx",
+    "bytes": 11921,
+    "note": "4月最早批;总公司",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260409_山东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260409_山东分公司_result.xlsx",
+    "bytes": 10636,
+    "note": "4月;山东",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260422_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260422_广东分公司_result.xlsx",
+    "bytes": 10609,
+    "note": "4月;广东",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260428_安徽分公司_result.xlsx",
+    "local": "download/船舶_000012_20260428_安徽分公司_result.xlsx",
+    "bytes": 10550,
+    "note": "4月;安徽",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000001_20260414_江苏分公司_result.xlsx",
+    "local": "download/船舶_000001_20260414_江苏分公司_result.xlsx",
+    "bytes": 10629,
+    "note": "边界:服务编号000001;江苏",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260507_浙江分公司_result.xlsx",
+    "local": "download/船舶_000012_20260507_浙江分公司_result.xlsx",
+    "bytes": 10764,
+    "note": "5月;浙江",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260509_重庆分公司_result.xlsx",
+    "local": "download/船舶_000012_20260509_重庆分公司_result.xlsx",
+    "bytes": 11104,
+    "note": "5月;重庆",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260515_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260515_广东分公司_result.xlsx",
+    "bytes": 11145,
+    "note": "5月;广东",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260519_大连分公司_result.xlsx",
+    "local": "download/船舶_000012_20260519_大连分公司_result.xlsx",
+    "bytes": 12930,
+    "note": "5月;大连;多船(12.9KB)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260522_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260522_广东分公司_result.xlsx",
+    "bytes": 16386,
+    "note": "5月;广东;多船(16.4KB)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260520_浙江分公司_result.xlsx",
+    "local": "download/船舶_000012_20260520_浙江分公司_result.xlsx",
+    "bytes": 59798,
+    "note": "5月;浙江;大批(59.8KB)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260526_上海分公司_result.xlsx",
+    "local": "download/船舶_000012_20260526_上海分公司_result.xlsx",
+    "bytes": 59124,
+    "note": "5月;上海;大批(59.1KB)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260527_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260527_广东分公司_result.xlsx",
+    "bytes": 101099,
+    "note": "5月;广东;大批(101KB)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260601_青岛分公司_result.xlsx",
+    "local": "download/船舶_000012_20260601_青岛分公司_result.xlsx",
+    "bytes": 11054,
+    "note": "6月;青岛(本地新增分公司)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260604_辽宁分公司_result.xlsx",
+    "local": "download/船舶_000012_20260604_辽宁分公司_result.xlsx",
+    "bytes": 25357,
+    "note": "6月;辽宁;多船(25.4KB)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260605_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260605_广东分公司_result.xlsx",
+    "bytes": 11489,
+    "note": "6月;广东",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260611_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260611_广东分公司_result.xlsx",
+    "bytes": 10986,
+    "note": "6月;广东",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260616安徽分公司_result.xlsx",
+    "local": "download/船舶_000012_20260616安徽分公司_result.xlsx",
+    "bytes": 10875,
+    "note": "边界:日期后无下划线直接拼分公司;安徽",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260624_四川分公司_result.xlsx",
+    "local": "download/船舶_000012_20260624_四川分公司_result.xlsx",
+    "bytes": 10902,
+    "note": "6月;四川",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260626_河南分公司_result.xlsx",
+    "local": "download/船舶_000012_20260626_河南分公司_result.xlsx",
+    "bytes": 20953,
+    "note": "6月;河南;多船(20.9KB)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_芦泾3_20260624_江苏分公司_result.xlsx",
+    "local": "download/船舶_芦泾3_20260624_江苏分公司_result.xlsx",
+    "bytes": 10839,
+    "note": "边界:以船名代替服务编号;江苏",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260701_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260701_广东分公司_result.xlsx",
+    "bytes": 10804,
+    "note": "7月(本地补);广东",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260707_广西分公司_result.xlsx",
+    "local": "download/船舶_000012_20260707_广西分公司_result.xlsx",
+    "bytes": 10784,
+    "note": "7月;广西(本地新增分公司)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260709_江苏分公司_result.xlsx",
+    "local": "download/船舶_000012_20260709_江苏分公司_result.xlsx",
+    "bytes": 11693,
+    "note": "7月;江苏",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260713_上海分公司_result.xlsx",
+    "local": "download/船舶_000012_20260713_上海分公司_result.xlsx",
+    "bytes": 14974,
+    "note": "7月;上海;多船(15.0KB)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260716_福建分公司_result.xlsx",
+    "local": "download/船舶_000012_20260716_福建分公司_result.xlsx",
+    "bytes": 10910,
+    "note": "7月;福建",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260717_天津分公司_result.xlsx",
+    "local": "download/船舶_000012_20260717_天津分公司_result.xlsx",
+    "bytes": 11456,
+    "note": "7月;天津",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260722_大连分公司_result.xlsx",
+    "local": "download/船舶_000012_20260722_大连分公司_result.xlsx",
+    "bytes": 10995,
+    "note": "7月;大连",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000013_20260706_江苏分公司_result.xlsx",
+    "local": "download/船舶_000013_20260706_江苏分公司_result.xlsx",
+    "bytes": 11262,
+    "note": "边界:服务编号000013;江苏",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260803_四川分公司_result.xlsx",
+    "local": "download/船舶_000012_20260803_四川分公司_result.xlsx",
+    "bytes": 10874,
+    "note": "8月;四川",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260805_广东分公司（清远）_result.xlsx",
+    "local": "download/船舶_000012_20260805_广东分公司（清远）_result.xlsx",
+    "bytes": 11505,
+    "note": "边界:全角括号地名后缀;广东",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260805_江苏分公司（1）_result.xlsx",
+    "local": "download/船舶_000012_20260805_江苏分公司（1）_result.xlsx",
+    "bytes": 11889,
+    "note": "边界:全角括号序号;江苏",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260807_浙江分公司_result.xlsx",
+    "local": "download/船舶_000012_20260807_浙江分公司_result.xlsx",
+    "bytes": 10940,
+    "note": "8月;浙江",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260914_浙江分公司_result.xlsx",
+    "local": "download/船舶_000012_20260914_浙江分公司_result.xlsx",
+    "bytes": 11184,
+    "note": "9月(本地补);浙江",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260915_福建分公司_result.xlsx",
+    "local": "download/船舶_000012_20260915_福建分公司_result.xlsx",
+    "bytes": 10930,
+    "note": "9月;福建",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260916_大连分公司_result.xlsx",
+    "local": "download/船舶_000012_20260916_大连分公司_result.xlsx",
+    "bytes": 11397,
+    "note": "9月;大连",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260918_湖北分公司_result.xlsx",
+    "local": "download/船舶_000012_20260918_湖北分公司_result.xlsx",
+    "bytes": 10777,
+    "note": "9月;湖北(本地新增分公司)",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260921_广西分公司（贵港）_result.xlsx",
+    "local": "download/船舶_000012_20260921_广西分公司（贵港）_result.xlsx",
+    "bytes": 10832,
+    "note": "边界:全角括号地名;广西",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260923_广东分公司_result.xlsx",
+    "local": "download/船舶_000012_20260923_广东分公司_result.xlsx",
+    "bytes": 10803,
+    "note": "9月;广东",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260924_天津分公司_result.xlsx",
+    "local": "download/船舶_000012_20260924_天津分公司_result.xlsx",
+    "bytes": 11148,
+    "note": "9月;天津",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_000012_20260929_江苏分公司_result.xlsx",
+    "local": "download/船舶_000012_20260929_江苏分公司_result.xlsx",
+    "bytes": 11069,
+    "note": "9月;江苏",
+    "magic": "504b0304"
+  },
+  {
+    "s3Key": "download/船舶_领航_20260929-广东分公司_result.xlsx",
+    "local": "download/船舶_领航_20260929-广东分公司_result.xlsx",
+    "bytes": 12042,
+    "note": "边界:船名+连字符命名;广东",
+    "magic": "504b0304"
   }
 ]
