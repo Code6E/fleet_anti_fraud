@@ -1,0 +1,870 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --danger: #dc2626;
+  --danger-hover: #b91c1c;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+  --text-secondary: #64748b;
+  --hover-bg: #f1f5f9;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ---- Loading ---- */
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+/* ---- Login ---- */
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-card {
+  background: var(--card-bg);
+  padding: 40px 36px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  width: 360px;
+  text-align: center;
+}
+
+.login-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.login-card h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.login-sub {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-input:focus {
+  border-color: var(--primary);
+}
+
+.login-error {
+  color: var(--danger);
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.login-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---- App layout ---- */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ---- Topbar ---- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 52px;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.topbar-left .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bucket-info {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--hover-bg);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* ---- 数据源切换（生产 S3 / 本地数据库） ---- */
+.source-switch {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--hover-bg);
+}
+
+.src-btn {
+  border: none;
+  background: transparent;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.src-btn:hover:not(:disabled) {
+  color: var(--text);
+  background: #e2e8f0;
+}
+
+.src-btn.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.src-btn.active.src-local {
+  background: #d97706;
+}
+
+.src-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.local-banner {
+  background: #fffbeb;
+  color: #92400e;
+  border-bottom: 1px solid #fde68a;
+  padding: 6px 20px;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* ---- Toolbar ---- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* ---- Breadcrumb ---- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.crumb-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+
+.crumb {
+  color: var(--primary);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.crumb:hover {
+  background: var(--hover-bg);
+}
+
+.crumb.current {
+  color: var(--text);
+  font-weight: 600;
+  cursor: default;
+}
+
+.crumb.current:hover {
+  background: transparent;
+}
+
+.crumb-sep {
+  color: var(--text-secondary);
+  margin: 0 2px;
+}
+
+/* ---- Buttons ---- */
+.btn {
+  border: none;
+  border-radius: var(--radius);
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.btn-secondary {
+  background: var(--hover-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: var(--danger-hover);
+}
+
+/* ---- Error bar ---- */
+.error-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  background: #fef2f2;
+  color: var(--danger);
+  font-size: 13px;
+  border-bottom: 1px solid #fecaca;
+}
+
+.error-close {
+  background: none;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 4px;
+}
+
+/* ---- File list ---- */
+.file-list-wrap {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+  padding: 0 20px 20px;
+}
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.file-table thead {
+  background: #f1f5f9;
+}
+
+.file-table th {
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.file-row {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+
+.file-row:hover {
+  background: var(--hover-bg);
+}
+
+.file-table td {
+  padding: 8px 12px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.col-icon {
+  min-width: 200px;
+}
+
+.col-icon .icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.col-size {
+  width: 100px;
+  color: var(--text-secondary);
+}
+
+.col-date {
+  width: 160px;
+  color: var(--text-secondary);
+}
+
+.col-actions {
+  width: 180px;
+  white-space: nowrap;
+}
+
+.file-name {
+  color: var(--text);
+}
+
+.folder-name {
+  color: var(--primary);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.folder-name:hover {
+  text-decoration: underline;
+}
+
+.action-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  margin-right: 4px;
+  transition: all 0.1s;
+}
+
+.action-btn:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+.action-btn.danger:hover {
+  background: #fef2f2;
+  color: var(--danger);
+  border-color: #fecaca;
+}
+
+/* ---- Empty state ---- */
+.empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* ---- Drop overlay ---- */
+.drop-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(37, 99, 235, 0.08);
+  border: 2px dashed var(--primary);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 600;
+  pointer-events: none;
+  margin: 0 20px 20px;
+}
+
+/* ---- Dialogs ---- */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  width: 400px;
+  max-width: 90vw;
+  box-shadow: var(--shadow-lg);
+}
+
+.dialog h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.dialog-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.dialog-input:focus {
+  border-color: var(--primary);
+}
+
+.dialog-error {
+  color: var(--danger);
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.dialog-message {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* ---- 顶部导航 ---- */
+.nav {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: 16px;
+}
+.nav-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.nav-btn:hover { background: rgba(255,255,255,0.1); }
+.nav-btn.active { background: var(--primary); color: #fff; }
+
+/* ---- 模块容器 ---- */
+.module {
+  padding: 16px 20px;
+}
+
+/* ---- 面板 ---- */
+.panel {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+.panel-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.panel-hint {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* ---- 船舶查询表单 ---- */
+.ship-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.ship-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: var(--text-secondary);
+  gap: 4px;
+}
+.ship-form input {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--text);
+}
+.ship-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ---- 确认框 ---- */
+.confirm-box {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #9a3412;
+}
+.cond-list {
+  margin: 8px 0 12px 18px;
+  list-style: disc;
+}
+.cond-list li { margin: 2px 0; }
+
+/* ---- 提示条 ---- */
+.toast-bar {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #166534;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* ---- 手动触发日期选择 ---- */
+.date-label {
+  font-size: 13px;
+  color: #64748b;
+  margin-left: 6px;
+}
+.date-input {
+  height: 30px;
+  padding: 0 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #1e293b;
+  background: #fff;
+}
+.date-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ---- 表格列筛选（v1.3i 船舶库：除操作列外每列可筛） ---- */
+.filter-row th { padding: 4px 6px; background: #f8fafc; border-bottom: 1px solid var(--border); }
+
+/* v1.5a：「风险」两级表头——父表头「风险」合并跨两列居中，子表头两个维度列居中且字号略小（选择器带 .file-table th 提升特异性，避免被基础 th 规则覆盖） */
+.file-table th.risk-group-th { text-align: center; }
+.file-table th.risk-sub-th {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-bottom: 1px solid var(--border);
+}
+.filter-input {
+  width: 100%;
+  min-width: 90px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 12px;
+  color: var(--text);
+  background: #fff;
+}
+.filter-input:focus { outline: none; border-color: var(--primary); }
+
+/* 日期范围筛选 */
+.date-range { display: flex; align-items: center; gap: 4px; }
+.date-range .date-input { width: 122px; }
+
+/* 我的查询时间范围快速切换（默认近7天） */
+.range-select { display: flex; align-items: center; gap: 6px; margin: 8px 0; }
+.range-btn {
+  height: 26px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: #fff;
+  font-size: 12px;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.range-btn:hover { border-color: var(--primary); }
+.range-btn.active { border-color: var(--primary); color: var(--primary); font-weight: 600; background: #fff; }
+
+/* 风险等级多选下拉 */
+.risk-select { position: relative; }
+.risk-select-btn {
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: #fff;
+  font-size: 12px;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.risk-select-btn:hover { border-color: var(--primary); }
+.risk-select-btn.active { border-color: var(--primary); color: var(--primary); font-weight: 600; }
+.risk-select-menu {
+  position: absolute;
+  z-index: 100;
+  top: 32px;
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: var(--shadow-lg);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 130px;
+}
+.risk-select-item { display: flex; align-items: center; gap: 8px; font-size: 12px; cursor: pointer; }
+.risk-select-item .risk-badge { margin-left: 0; }
+
+/* ===================== 船舶查询 v3 新增样式 ===================== */
+
+/* 风险徽章 */
+.risk-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+.risk-high { background: #fee2e2; color: #b91c1c; }
+.risk-medium { background: #ffedd5; color: #c2410c; }
+.risk-review { background: #dbeafe; color: #1d4ed8; }
+.risk-notice { background: #f1f5f9; color: #475569; }
+.risk-low { background: #dcfce7; color: #15803d; }
+.risk-none { background: #f1f5f9; color: #94a3b8; }
+
+/* 风险类型标签（v1.4b 起为风险列主显示：有风险类型的仅显示类型标签，等级徽章仅保留低风险） */
+.risk-type-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.risk-type-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; background: #fdf2f8; color: #9d174d; border: 1px solid #fbcfe8; white-space: nowrap; }
+/* v1.5：双维度风险标签分色（·高红 / ·中黄 / ·低绿，与《风险评估维度.xlsx》红黄绿一致） */
+.risk-type-tag.tag-high { background: #fef2f2; color: #b91c1c; border-color: #fca5a5; }
+.risk-type-tag.tag-mid { background: #fefce8; color: #a16207; border-color: #fde047; }
+.risk-type-tag.tag-low { background: #f0fdf4; color: #15803d; border-color: #86efac; }
+.risk-type-tag.tag-nodata { background: #f4f4f5; color: #52525b; border-color: #d4d4d8; }
+
+/* 信息/警告条 */
+.info-bar { background: #eff6ff; color: #1e40af; padding: 8px 14px; border-radius: 6px; margin: 8px 0; font-size: 13px; }
+.warn-bar { background: #fef3c7; color: #92400e; padding: 8px 14px; border-radius: 6px; margin: 8px 0; font-size: 13px; }
+
+/* 船舶查询结果 */
+.ship-result { border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; background: #fff; }
+.ship-header { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 12px; margin-bottom: 10px; }
+.ship-name { font-size: 16px; font-weight: 700; color: var(--text); margin-right: 6px; }
+.ship-meta { font-size: 12px; color: var(--text-secondary); }
+
+/* 报告区 */
+.report-section { margin-top: 12px; border-top: 1px dashed var(--border); padding-top: 10px; }
+.report-header { display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 6px 0; color: var(--primary); font-size: 13px; font-weight: 600; }
+/* v1.6：报告水印容器——水印层绝对定位铺满，随正文滚动区全覆盖 */
+.report-md-wrap { position: relative; margin-top: 8px; }
+.report-md { background: #f8fafc; border: 1px solid var(--border); border-radius: 6px; padding: 14px; margin-top: 0; white-space: pre-wrap; word-break: break-word; font-family: -apple-system, 'PingFang SC', sans-serif; font-size: 13px; line-height: 1.7; max-height: 500px; overflow-y: auto; }
+.report-watermark { position: absolute; inset: 0; pointer-events: none; background-repeat: repeat; z-index: 1; border-radius: 6px; }
+.report-footer { margin-top: 10px; display: flex; justify-content: center; }
+.rule-hits { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
+.rule-chip { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+.rule-chip.risk-high { background: #fee2e2; color: #b91c1c; }
+.rule-chip.risk-medium { background: #ffedd5; color: #c2410c; }
+.rule-chip.risk-review { background: #dbeafe; color: #1d4ed8; }
+.rule-chip.risk-notice { background: #f1f5f9; color: #475569; }
+
+/* 统计卡片 */
+.stat-cards { display: flex; flex-wrap: wrap; gap: 12px; }
+.stat-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px 18px; min-width: 110px; text-align: center; }
+.stat-card.stat-high { border-color: #fca5a5; background: #fef2f2; }
+.stat-card.stat-good { border-color: #86efac; background: #f0fdf4; }
+/* v1.4c：风险类型统计卡；v1.5 双维度分色（·高红 / ·中黄 / ·低绿） */
+.stat-card.stat-risk { border-color: #fbcfe8; background: #fdf2f8; }
+.stat-card.stat-risk .stat-value { color: #9d174d; }
+.stat-card.stat-mid { border-color: #fde047; background: #fefce8; }
+.stat-card.stat-mid .stat-value { color: #a16207; }
+.stat-value { font-size: 26px; font-weight: 700; color: var(--text); }
+.stat-card.stat-high .stat-value { color: #b91c1c; }
+.stat-card.stat-good .stat-value { color: #15803d; }
+.stat-label { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+/* v1.4e：可点击统计卡（命中复用——点击弹窗查看明细） */
+.stat-card.stat-clickable { cursor: pointer; transition: transform .12s ease, box-shadow .12s ease; }
+.stat-card.stat-clickable:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 0, 0, .12); }
+
+/* v1.5a：风险统计大卡片——单独一行两张（业务品质风险/欺诈风险），卡片内分高/中/低三格分色 */
+.risk-dim-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+.risk-dim-card {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.risk-dim-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 8px;
+}
+.risk-dim-body { display: flex; gap: 8px; }
+.risk-dim-cell {
+  flex: 1;
+  text-align: center;
+  padding: 10px 6px;
+  border-radius: 6px;
+}
+.risk-dim-cell.lv-high { background: #fef2f2; }
+.risk-dim-cell.lv-mid { background: #fefce8; }
+.risk-dim-cell.lv-low { background: #f0fdf4; }
+.risk-dim-cell.lv-nodata { background: #f4f4f5; }
+.risk-dim-value { font-size: 24px; font-weight: 700; color: var(--text); line-height: 1.2; }
+.risk-dim-cell.lv-high .risk-dim-value { color: #b91c1c; }
+.risk-dim-cell.lv-mid .risk-dim-value { color: #a16207; }
+.risk-dim-cell.lv-low .risk-dim-value { color: #15803d; }
+.risk-dim-cell.lv-nodata .risk-dim-value { color: #52525b; }
+.risk-dim-cell-label { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+
+/* 日志状态 */
+.status-ok { color: #15803d; font-weight: 600; }
+.status-err { color: #b91c1c; font-weight: 600; }
+.log-detail { color: var(--text-secondary); font-size: 12px; max-width: 400px; }
+
+/* 对话框标签 */
+.dialog-label { display: block; margin-bottom: 10px; font-size: 13px; color: var(--text-secondary); }
+.dialog-label input, .dialog-label select { display: block; margin-top: 4px; }
+
+/* 宽对话框（船舶详情与报告） */
+.dialog-lg { width: 780px; max-width: 92vw; max-height: 88vh; overflow-y: auto; text-align: left; }
+.dialog-lg h3 { margin-bottom: 12px; }
+.dialog-lg .ship-result { border: none; padding: 0; }
+.dialog-lg .report-md { max-height: 420px; }
